@@ -2,10 +2,14 @@ terraform {
   required_providers {
     tinkerbell = {
       source  = "tinkerbell/tinkerbell"
-      version = "0.1.0"
+      version = ">=0.1.0"
     }
   }
 }
+
+# provider "tinkerbell" {
+#   host = "http://tinkerbell.local"
+# }
 
 provider "tinkerbell" {
   grpc_authority = "127.0.0.1:42113"
